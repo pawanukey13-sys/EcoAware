@@ -1,10 +1,10 @@
 // src/pages/Dashboard/data/index.js
 
-import airQuality from "./airQuality";
-import forest from "./forest";
-import plastic from "./water";
-import climate from "./climate";
-export const categories = [airQuality, forest, plastic, climate];
+import airQuality from "./Airquality";
+import forest from "./Forest";
+import water from "./water";
+import climate from "./Climate";
+export const categories = [airQuality, forest, water, climate];
 
 export const allCountries = [
   ...new Set(
