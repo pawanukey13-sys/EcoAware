@@ -1,6 +1,6 @@
 // src/utility/ecobotApi.js
 export async function explainGraph({ metric, unit, data }) {
-  const res = await fetch('http://localhost:4000/api/ecoChatBot/explain-graph', {
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/api/ecoChatBot/explain-graph`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ metric, unit, data })
@@ -10,7 +10,7 @@ export async function explainGraph({ metric, unit, data }) {
   return res.json(); // { explanation }
 }
 export async function askFollowUp({ metric, unit, data, question, history }) {
-  const res = await fetch('http://localhost:4000/api/ecoChatBot/ask', {
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/api/ecoChatBot/ask`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ metric, unit, data, question, history })

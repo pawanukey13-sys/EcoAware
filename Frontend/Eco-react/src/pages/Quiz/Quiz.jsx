@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Quiz.css";
-const API_URL = "http://localhost:4000/api/quizscore";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/quizscore`;
 const Questions = [
   {
     q: "Earth's temperature has risen by how much since pre-industrial times?",

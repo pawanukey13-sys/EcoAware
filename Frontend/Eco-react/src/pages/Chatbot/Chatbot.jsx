@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./Chatbot.css";
  import Toggletheme from "../../Component/Toggeltheme/Themetoggle";
 
-const API_URL = "http://localhost:4000/api/chat";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/chat`;
 const suggestions = [
   "What is climate change",
   "Why forests are important",

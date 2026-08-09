@@ -6,7 +6,7 @@ import "./Home.css"; // apna style.css copy karke Home.css naam de do
 // ── Images — inhe src/assets/ folder mein rakho ──
 import image1 from "../../assets/image1.png";
 import image3 from "../../assets/image3.png";
-const API_URL = "http://localhost:4000/api/pledge";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/pledge`;
 
 export default function Home() {
   const [pledgeCount, setPledgeCount] = useState(0);
