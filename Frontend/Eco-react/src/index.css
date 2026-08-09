@@ -1,0 +1,302 @@
+/* light theme */
+:root {
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+  --card: #ffffff;
+  --text: #222;
+  --border: #d9d9d9;
+  --green-dark: #14523a;
+  --green-mid: #4caf82;
+  --green-light: #a8dfc4;
+  --green-glow: #6fd9a3;
+  --accent: #f4a021;
+  --accent-light: #ffc978;
+  --bg: #f5f7f3;
+  --white: #ffffff;
+  --text: #1c1f1a;
+  --text-light: #5a6359;
+  --border: rgba(26, 107, 71, 0.15);
+  --shadow-soft: 0 4px 20px rgba(20, 82, 58, 0.08);
+  --shadow-strong: 0 8px 30px rgba(20, 82, 58, 0.18);
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  /* stats section - light theme */
+  --stats-bg: linear-gradient(135deg, #eef7f0 0%, #f5f7f3 100%);
+  --stats-radial: rgba(76, 175, 130, 0.12);
+  --stats-text: var(--text);
+  --stats-label: #4e5a4c;
+  --stats-num: var(--green-dark);
+  --stats-accent: #1a6b47;
+  --stats-badge-border: rgba(26, 107, 71, 0.4);
+  --stats-badge-text: var(--green-dark);
+  --stats-badge-hover-bg: rgba(26, 107, 71, 0.08);
+  --header-start: #14523a;
+  --header-mid: #1f7a55;
+  --header-end: #4caf82;
+  --navbar-bg: #ffffff;
+  --navbar-text: #222;
+  --card-color: rgb(27, 220, 195);
+  --result-card-bg: #ffffff;
+  --result-card-border: #d9d9d9;
+  --result-card-shadow: rgba(0, 0, 0, 0.12);
+
+  --issue-card-bg: #f7f6f4;
+  --issue-card-border: #e4e8e2;
+  --issue-card-text-primary: #16221a;
+  --issue-card-text-secondary: #5c6b60;
+  --issue-card-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  --issue-card-shadow-hover: 0 10px 28px rgba(0, 0, 0, 0.1)
+    /* category accents */
+    /* ===========================
+      CLIMATE CHANGE
+===========================*/
+    --climate-bg: #fff8f5;
+
+  --climate-surface: #ffffff;
+  --climate-surface-2: #fff2eb;
+
+  --climate-text: #2c1c16;
+  --climate-text-light: #70584d;
+
+  --climate-border: #f2d8cf;
+
+  --climate-primary: #e0532b;
+  --climate-primary-light: #ff7a52;
+  --climate-accent: #ffb347;
+
+  --climate-hero-gradient: radial-gradient(
+    circle at top,
+    rgba(224, 83, 43, 0.16),
+    transparent 70%
+  );
+
+  --climate-card-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  --climate-card-hover: 0 18px 40px rgba(224, 83, 43, 0.18);
+
+  /* defor */
+  --deforestation-bg: #f7faf7;
+  --deforestation-surface: #ffffff;
+  --deforestation-surface-2: #eef7f0;
+
+  --deforestation-text: #16221b;
+  --deforestation-text-light: #4e6355;
+
+  --deforestation-border: #d7e5db;
+
+  --deforestation-primary: #1b5e20;
+  --deforestation-primary-light: #2e7d32;
+  --deforestation-accent: #43a047;
+
+  --deforestation-hero-gradient: radial-gradient(
+    circle at top,
+    rgba(67, 160, 71, 0.18),
+    transparent 70%
+  );
+
+  --deforestation-card-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  --deforestation-card-hover: 0 18px 40px rgba(46, 125, 50, 0.18);
+
+  /* ===========================
+      PLASTIC POLLUTION
+===========================*/
+
+  --plastic-bg: #f7fcfd;
+  --plastic-surface: #ffffff;
+  --plastic-surface-2: #edf9fb;
+
+  --plastic-text: #17313a;
+  --plastic-text-light: #58727a;
+
+  --plastic-border: #d9edf2;
+
+  --plastic-primary: #0097a7;
+  --plastic-primary-light: #26c6da;
+  --plastic-accent: #00bcd4;
+  --plastic-hero-gradient: radial-gradient(
+    circle at top,
+    rgba(0, 188, 212, 0.18),
+    transparent 70%
+  );
+  --plastic-card-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  --plastic-card-hover: 0 18px 40px rgba(0, 188, 212, 0.18);
+
+  /* login and register */
+  --auth-bg: linear-gradient(135deg, #e8f5e9, #dcedc8, #e3f2fd);
+  --auth-card: #ffffff;
+  --auth-border: #d6e8d8;
+  --auth-heading: #14532d;
+  --auth-text: #4b5563;
+  --auth-input-bg: #f8faf9;
+  --auth-input-border: #d5e5d7;
+  --auth-input-color: #1f2937;
+  --auth-placeholder: #94a3b8;
+  --auth-button: linear-gradient(135deg, #22c55e, #16a34a);
+  --auth-link: #16a34a;
+
+  /* dashboard */
+  --db-bg: #f4f8f4;
+  --db-surface: #ffffff;
+  --db-border: #d8e5d8;
+  --db-text: #17351f;
+  --db-text-light: #5d7464;
+  --db-accent: #2e7d32;
+  --db-card-hover: #edf7ee;
+  --db-btn: #43a047;
+  --db-btn-hover: #2e7d32;
+}
+/* dark theme */
+body.dark {
+  --bg: #111827;
+  --card: #1f2937;
+  --text: #f9fafb;
+  --white: #1f2937;
+  --border: #374151;
+  --header-start: #111827;
+  --header-mid: #1f2937;
+  --header-end: #374151;
+  /* stats section - dark theme */
+  --stats-bg: linear-gradient(135deg, #0f2e1d 0%, #1b4a30 100%);
+  --stats-radial: rgba(76, 175, 130, 0.22);
+  --stats-text: #f9fafb;
+  --stats-label: rgba(255, 255, 255, 0.6);
+  --stats-num: var(--green-light);
+  --stats-accent: #1de68c;
+  --stats-badge-border: rgb(45, 216, 222);
+  --stats-badge-text: #baf7e2;
+  --stats-badge-hover-bg: rgba(168, 240, 208, 0.08);
+  --navbar-bg: #121212;
+  --navbar-text: #dad5d5;
+  --card-color: #121212;
+  --result-card-bg: #205eb6;
+  --result-card-border: #374151;
+  --result-card-shadow: rgba(0, 0, 0, 0.45);
+
+  --issue-card-bg: #161f19;
+  --issue-card-border: #24312a;
+  --issue-card-text-primary: #eef2ee;
+  --issue-card-text-secondary: #a9b8ab;
+  --issue-card-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --issue-card-shadow-hover: 0 10px 28px rgba(0, 0, 0, 0.45);
+
+  /* category accents - brighter, so they still pop on dark bg */
+  --climate-bg: #17110f;
+
+  --climate-surface: #241814;
+  --climate-surface-2: #2d1d18;
+
+  --climate-text: #fff4ef;
+  --climate-text-light: #d8bdb2;
+
+  --climate-border: rgba(255, 255, 255, 0.08);
+
+  --climate-primary: #ff7a52;
+  --climate-primary-light: #ff956f;
+  --climate-accent: #ffc978;
+
+  --climate-hero-gradient: radial-gradient(
+    circle at top,
+    rgba(255, 122, 82, 0.2),
+    transparent 70%
+  );
+
+  --climate-card-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+
+  --climate-card-hover: 0 18px 45px rgba(255, 122, 82, 0.22);
+
+  /* defo */
+  --deforestation-bg: #07140d;
+
+  --deforestation-surface: #102219;
+  --deforestation-surface-2: #173224;
+
+  --deforestation-text: #f4fff5;
+  --deforestation-text-light: #b5cdbd;
+
+  --deforestation-border: rgba(255, 255, 255, 0.08);
+
+  --deforestation-primary: #34d399;
+  --deforestation-primary-light: #6ee7b7;
+  --deforestation-accent: #4ade80;
+
+  --deforestation-hero-gradient: radial-gradient(
+    circle at top,
+    rgba(74, 222, 128, 0.18),
+    transparent 70%
+  );
+
+  --deforestation-card-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+
+  --deforestation-card-hover: 0 18px 45px rgba(74, 222, 128, 0.2);
+
+  /* plastic     */
+  --plastic-bg: #07161d;
+
+  --plastic-surface: #10252d;
+  --plastic-surface-2: #163641;
+
+  --plastic-text: #eefcff;
+  --plastic-text-light: #b5d8df;
+
+  --plastic-border: rgba(255, 255, 255, 0.08);
+
+  --plastic-primary: #26c6da;
+  --plastic-primary-light: #4dd0e1;
+  --plastic-accent: #80deea;
+
+  --plastic-hero-gradient: radial-gradient(
+    circle at top,
+    rgba(38, 198, 218, 0.2),
+    transparent 70%
+  );
+
+  --plastic-card-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+
+  --plastic-card-hover: 0 18px 45px rgba(38, 198, 218, 0.22);
+
+  /* login and register */
+  --auth-bg: linear-gradient(135deg, #0f172a, #14532d, #1e3a8a);
+  --auth-card: rgba(255, 255, 255, 0.08);
+  --auth-border: rgba(255, 255, 255, 0.15);
+  --auth-heading: #ffffff;
+  --auth-text: #d6d6d6;
+  --auth-input-bg: rgba(255, 255, 255, 0.08);
+  --auth-input-border: rgba(255, 255, 255, 0.2);
+  --auth-input-color: #ffffff;
+  --auth-placeholder: #d0d0d0;
+  --auth-button: linear-gradient(135deg, #22c55e, #15803d);
+  --auth-link: #4ade80;
+
+  /* dashboard */
+  --db-bg: #0f2818;
+  --db-surface: #163b24;
+  --db-border: #2a4a36;
+  --db-text: #f5f5f0;
+  --db-text-light: #b8ccc0;
+  --db-accent: #8fd9b6;
+  --db-card-hover: #1b452c;
+  --db-btn: #e8a33d;
+  --db-btn-hover: #d68e20;
+}
+
+body {
+  background: white;
+  color: black;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.Theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 99999;
+}

@@ -1,0 +1,219 @@
+:root {
+  --green-dark: #1a6b47;
+  --green-mid: #4caf82;
+  --green-light: #a8dfc4;
+  --accent: #f4a021;
+  --accent-light: #fde68a;
+  --bg: #f7f5f0;
+  --bg-dark: #0f1f16;
+  --text: #1c1f1a;
+  --text-light: #5a6359;
+  --white: #ffffff;
+}
+.navbar {
+  height: 80px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--navbar-bg);
+  color: var(--navbar-text);
+  padding: 1.2rem 4rem;
+  border-bottom: 1px solid rgb(6, 249, 128);
+  transition: all 0.3s;
+}
+.nav-logo {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--green-dark);
+  text-decoration: none;
+  letter-spacing: -0.8px;
+}
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.logout-btn{
+  text-decoration: none;
+  color: rgb(154, 6, 6);
+  padding: 9px 18px;
+  border: 2px solid #22c55e;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+.logout-btn:hover{
+   background: #e71704;
+  color: white;
+  box-shadow: 0 8px 18px rgba(34, 197, 94, 0.3);
+  cursor: pointer;
+}
+.login-btn {
+  text-decoration: none;
+  color: var(--text);
+  padding: 9px 18px;
+  border: 2px solid #22c55e;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+.login-btn:hover {
+  background: #22c55e;
+  color: white;
+  box-shadow: 0 8px 18px rgba(34, 197, 94, 0.3);
+  cursor: pointer;
+}
+.register-btn {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, #22c55e, #15803d);
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 18px rgba(34, 197, 94, 0.25);
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(34, 197, 94, 0.4);
+  cursor: pointer;
+}
+
+.login-btn:active,
+.register-btn:active {
+  transform: scale(0.96);
+}
+.nav-logo span {
+  color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  color: inherit;
+  list-style: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--text);
+  font-weight: 600;
+  transition: color 0.2s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+.desktop-theme {
+  display: block;
+}
+.mobile-theme {
+  display: none;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: #1a6b47;
+  border-bottom-color: #1a6b47;
+}
+
+.nav-cta {
+  text-decoration: none;
+  padding: 0.5rem 1.1rem;
+  margin-right: 9px;
+  background-color: var(--green-dark);
+  color: white;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-btn {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: var(--text);
+}
+.nav-cta:hover {
+  background: #4caf82;
+}
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 2rem;
+  }
+  .nav-logo {
+    font-size: 1.8rem;
+  }
+  .nav-links {
+    gap: 1.2rem;
+  }
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+  .nav-cta {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+  }
+  .navbar {
+    padding: 0 1rem;
+  }
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 260px;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    background: var(--navbar-bg);
+    transition: 0.35s ease;
+  }
+  .desktop-theme {
+    display: none;
+  }
+  .mobile-theme {
+    display: block;
+  }
+  .nav-links.active {
+    right: 0;
+  }
+  .nav-links a {
+    font-size: 18px;
+  }
+  .nav-cta {
+    display: none;
+  }
+}

@@ -1,0 +1,305 @@
+/* ==========================================================
+   DEFORESTATION.CSS
+   (Uses your custom --deforestation-* theme variables)
+========================================================== */
+
+.forest-page{
+    background: var(--deforestation-bg);
+    color: var(--deforestation-text);
+    overflow: hidden;
+    position: relative;
+}
+
+/* ================= HERO GLOW ================= */
+
+.forest-top{
+    position: absolute;
+    inset: 0;
+    height: 420px;
+    background: var(--deforestation-hero-gradient);
+    filter: blur(70px);
+    animation: floatGlow 8s ease-in-out infinite;
+}
+
+@keyframes floatGlow{
+    50%{
+        transform: translateY(25px);
+    }
+}
+
+/* ================= HERO ================= */
+
+.forest-hero{
+    max-width: 1150px;
+    margin: auto;
+    padding: 120px 30px 70px;
+    position: relative;
+    z-index: 2;
+}
+
+.back-link{
+    color: var(--deforestation-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.back-link:hover{
+    color: var(--deforestation-accent);
+}
+
+.forest-tag{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    padding: 8px 18px;
+    border-radius: 50px;
+    background: var(--deforestation-surface-2);
+    color: var(--deforestation-primary);
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    width: 170px;
+}
+
+.forest-title{
+    font-size: clamp(2.8rem,6vw,5rem);
+    line-height: 1.1;
+    margin: 30px 0;
+}
+
+.forest-title em{
+    color: var(--deforestation-primary);
+    font-style: normal;
+}
+
+.forest-sub{
+    max-width: 720px;
+    color: var(--deforestation-text-light);
+    line-height: 1.8;
+    font-size: 1.08rem;
+}
+
+/* ================= SECTIONS ================= */
+
+.forest-section{
+    max-width: 1150px;
+    margin: auto;
+    padding: 70px 30px;
+}
+
+.eyebrow{
+    color: var(--deforestation-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.forest-section h2{
+    font-size: 2.2rem;
+    margin: 15px 0;
+}
+
+.forest-section p{
+    color: var(--deforestation-text-light);
+    line-height: 1.8;
+}
+
+/* ================= CHART ================= */
+
+.forest-chart{
+    margin-top: 40px;
+    background: var(--deforestation-surface);
+    border: 1px solid var(--deforestation-border);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: var(--deforestation-card-shadow);
+}
+
+/* ================= CAUSE CARDS ================= */
+
+.forest-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 28px;
+    margin-top: 45px;
+}
+
+.forest-card{
+    background: var(--deforestation-surface);
+    border: 1px solid var(--deforestation-border);
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: var(--deforestation-card-shadow);
+    transition: .35s;
+}
+
+.forest-card:hover{
+    transform: translateY(-8px);
+    box-shadow: var(--deforestation-card-hover);
+}
+
+.forest-card h3{
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--deforestation-primary);
+}
+
+.forest-card p{
+    margin: 0;
+}
+
+/* ================= IMPACT STATS ================= */
+
+.impact-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.impact-card{
+    background: var(--deforestation-surface);
+    border: 1px solid var(--deforestation-border);
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: var(--deforestation-card-shadow);
+    transition: .3s;
+}
+
+.impact-card:hover{
+    transform: translateY(-8px);
+    box-shadow: var(--deforestation-card-hover);
+}
+
+.impact-number{
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--deforestation-primary);
+}
+
+.impact-text{
+    margin-top: 10px;
+    color: var(--deforestation-text-light);
+    line-height: 1.5;
+}
+
+/* ================= SOLUTIONS ================= */
+
+.solution-list{
+    margin-top: 35px;
+    display: grid;
+    gap: 18px;
+    padding-left: 22px;
+}
+
+.solution-list li{
+    color: var(--deforestation-text-light);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.solution-list li::marker{
+    color: var(--deforestation-primary);
+}
+
+/* ================= CTA ================= */
+
+.forest-cta{
+    margin: 80px auto;
+    max-width: 1150px;
+    padding: 70px 30px;
+    text-align: center;
+    border-radius: 25px;
+    background: linear-gradient(
+        135deg,
+        var(--deforestation-primary),
+        var(--deforestation-primary-light)
+    );
+    color: white;
+}
+
+.forest-cta h2{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.forest-cta p{
+    margin: 20px 0 35px;
+    opacity: .95;
+}
+
+.forest-btn{
+    display: inline-block;
+    padding: 15px 35px;
+    background: white;
+    color: var(--deforestation-primary);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.forest-btn:hover{
+    transform: translateY(-4px);
+}
+
+/* ================= FOOTER ================= */
+
+.forest-footer{
+    padding: 40px;
+    text-align: center;
+    color: var(--deforestation-text-light);
+    border-top: 1px solid var(--deforestation-border);
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--deforestation-primary);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--deforestation-bg);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px){
+
+    .forest-title{
+        font-size: 2.5rem;
+    }
+
+    .forest-section{
+        padding: 60px 20px;
+    }
+
+    .forest-section h2{
+        font-size: 1.8rem;
+    }
+
+    .forest-hero{
+        padding-top: 100px;
+    }
+
+    .forest-cta{
+        padding: 50px 20px;
+    }
+
+    .forest-cta h2{
+        font-size: 2rem;
+    }
+
+    .forest-chart{
+        padding: 15px;
+    }
+
+}

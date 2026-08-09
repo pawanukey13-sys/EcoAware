@@ -1,0 +1,218 @@
+/* Chart header layout */
+.db-chart-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.db-chart-header h3 {
+  flex: 1 1 260px;
+  margin: 0;
+}
+
+.db-chart-header .db-chart-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+/* Group toggle + explain button together so they don't fight for space */
+.db-chart-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* EcoBot panel */
+.ecobot-explain {
+  margin: 16px 0 24px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--db-border, #1e3a2f);
+  border-radius: 10px;
+}
+
+.ecobot-explain > button {
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.ecobot-explanation {
+  margin-top: 14px;
+  line-height: 1.6;
+  font-size: 14.5px;
+  color: var(--db-text-light, #cfe0d9);
+}
+
+.ecobot-followup {
+  margin-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 14px;
+}
+
+.ecobot-qa {
+  margin-bottom: 12px;
+}
+
+.ecobot-q {
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--db-text, #fff);
+  margin: 0 0 4px;
+}
+
+.ecobot-a {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--db-text-light, #cfe0d9);
+  margin: 0;
+}
+
+.ecobot-input-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.ecobot-input-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  font-size: 13.5px;
+  border-radius: 8px;
+  border: 1px solid var(--db-border, #1e3a2f);
+  background: rgba(0,0,0,0.2);
+  color: var(--db-text, #fff);
+}
+
+.ecobot-input-row input:focus {
+  outline: none;
+  border-color: var(--db-accent, #2e7d32);
+}
+
+.ecobot-input-row button {
+  padding: 10px 16px;
+  font-size: 13.5px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+/* Main Container */
+.ecobot-compare {
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Flexbox wrapper for inputs */
+.ecobot-compare-selects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap; 
+}
+
+/* Dropdown styling */
+.ecobot-compare-selects select {
+  flex: 1;
+  min-width: 140px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  appearance: auto; /* Keeps native dropdown arrow */
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ecobot-compare-selects select:focus {
+  border-color: #10b981; /* Eco-friendly green */
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+/* "vs" separator text */
+.ecobot-compare-selects span {
+  font-weight: 700;
+  color: #9ca3af;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* Button styling */
+.auth-btn {
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #10b981;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.auth-btn:hover:not(:disabled) {
+  background-color: #059669;
+}
+
+.auth-btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.auth-btn:disabled {
+  background-color: #a7f3d0;
+  cursor: not-allowed;
+}
+
+/* Explanation text box */
+.ecobot-explanation {
+  margin-top: 24px;
+  padding: 16px 20px;
+  background-color: #ecfdf5;
+  border-left: 4px solid #10b981;
+  border-radius: 0 8px 8px 0;
+  color: #1f2937;
+  font-size: 1rem;
+  line-height: 1.6;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Smooth reveal for the result text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 520px) {
+  .ecobot-compare-selects {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ecobot-compare-selects span {
+    text-align: center;
+    margin: -4px 0;
+  }
+  
+  .auth-btn {
+    margin-top: 8px;
+  }
+}

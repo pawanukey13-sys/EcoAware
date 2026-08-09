@@ -1,0 +1,27 @@
+/* Desktop floating button */
+.Theme-toggle{
+    position: fixed;
+    top:20px;
+    right:20px;
+    z-index:1000;
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+/* Button inside mobile menu */
+.Theme-toggle-mobile{
+    position: static;
+
+    width:100%;
+    padding:10px;
+
+    border:none;
+    border-radius:8px;
+
+    cursor:pointer;
+}

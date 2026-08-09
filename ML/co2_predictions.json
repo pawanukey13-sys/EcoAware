@@ -1,0 +1,572 @@
+{
+  "Australia": [
+    {
+      "country": "Australia",
+      "year": 2025,
+      "value": 14.23,
+      "predicted": true
+    },
+    {
+      "country": "Australia",
+      "year": 2026,
+      "value": 13.97,
+      "predicted": true
+    },
+    {
+      "country": "Australia",
+      "year": 2027,
+      "value": 13.71,
+      "predicted": true
+    },
+    {
+      "country": "Australia",
+      "year": 2028,
+      "value": 13.45,
+      "predicted": true
+    },
+    {
+      "country": "Australia",
+      "year": 2029,
+      "value": 13.18,
+      "predicted": true
+    },
+    {
+      "country": "Australia",
+      "year": 2030,
+      "value": 12.92,
+      "predicted": true
+    }
+  ],
+  "Bangladesh": [
+    {
+      "country": "Bangladesh",
+      "year": 2025,
+      "value": 0.67,
+      "predicted": true
+    },
+    {
+      "country": "Bangladesh",
+      "year": 2026,
+      "value": 0.69,
+      "predicted": true
+    },
+    {
+      "country": "Bangladesh",
+      "year": 2027,
+      "value": 0.71,
+      "predicted": true
+    },
+    {
+      "country": "Bangladesh",
+      "year": 2028,
+      "value": 0.73,
+      "predicted": true
+    },
+    {
+      "country": "Bangladesh",
+      "year": 2029,
+      "value": 0.76,
+      "predicted": true
+    },
+    {
+      "country": "Bangladesh",
+      "year": 2030,
+      "value": 0.78,
+      "predicted": true
+    }
+  ],
+  "Brazil": [
+    {
+      "country": "Brazil",
+      "year": 2025,
+      "value": 2.45,
+      "predicted": true
+    },
+    {
+      "country": "Brazil",
+      "year": 2026,
+      "value": 2.46,
+      "predicted": true
+    },
+    {
+      "country": "Brazil",
+      "year": 2027,
+      "value": 2.47,
+      "predicted": true
+    },
+    {
+      "country": "Brazil",
+      "year": 2028,
+      "value": 2.48,
+      "predicted": true
+    },
+    {
+      "country": "Brazil",
+      "year": 2029,
+      "value": 2.5,
+      "predicted": true
+    },
+    {
+      "country": "Brazil",
+      "year": 2030,
+      "value": 2.51,
+      "predicted": true
+    }
+  ],
+  "China": [
+    {
+      "country": "China",
+      "year": 2025,
+      "value": 8.84,
+      "predicted": true
+    },
+    {
+      "country": "China",
+      "year": 2026,
+      "value": 9.02,
+      "predicted": true
+    },
+    {
+      "country": "China",
+      "year": 2027,
+      "value": 9.21,
+      "predicted": true
+    },
+    {
+      "country": "China",
+      "year": 2028,
+      "value": 9.39,
+      "predicted": true
+    },
+    {
+      "country": "China",
+      "year": 2029,
+      "value": 9.58,
+      "predicted": true
+    },
+    {
+      "country": "China",
+      "year": 2030,
+      "value": 9.76,
+      "predicted": true
+    }
+  ],
+  "Egypt": [
+    {
+      "country": "Egypt",
+      "year": 2025,
+      "value": 2.3,
+      "predicted": true
+    },
+    {
+      "country": "Egypt",
+      "year": 2026,
+      "value": 2.3,
+      "predicted": true
+    },
+    {
+      "country": "Egypt",
+      "year": 2027,
+      "value": 2.31,
+      "predicted": true
+    },
+    {
+      "country": "Egypt",
+      "year": 2028,
+      "value": 2.31,
+      "predicted": true
+    },
+    {
+      "country": "Egypt",
+      "year": 2029,
+      "value": 2.31,
+      "predicted": true
+    },
+    {
+      "country": "Egypt",
+      "year": 2030,
+      "value": 2.31,
+      "predicted": true
+    }
+  ],
+  "Germany": [
+    {
+      "country": "Germany",
+      "year": 2025,
+      "value": 7.3,
+      "predicted": true
+    },
+    {
+      "country": "Germany",
+      "year": 2026,
+      "value": 7.11,
+      "predicted": true
+    },
+    {
+      "country": "Germany",
+      "year": 2027,
+      "value": 6.92,
+      "predicted": true
+    },
+    {
+      "country": "Germany",
+      "year": 2028,
+      "value": 6.73,
+      "predicted": true
+    },
+    {
+      "country": "Germany",
+      "year": 2029,
+      "value": 6.54,
+      "predicted": true
+    },
+    {
+      "country": "Germany",
+      "year": 2030,
+      "value": 6.35,
+      "predicted": true
+    }
+  ],
+  "India": [
+    {
+      "country": "India",
+      "year": 2025,
+      "value": 2.2,
+      "predicted": true
+    },
+    {
+      "country": "India",
+      "year": 2026,
+      "value": 2.26,
+      "predicted": true
+    },
+    {
+      "country": "India",
+      "year": 2027,
+      "value": 2.32,
+      "predicted": true
+    },
+    {
+      "country": "India",
+      "year": 2028,
+      "value": 2.37,
+      "predicted": true
+    },
+    {
+      "country": "India",
+      "year": 2029,
+      "value": 2.43,
+      "predicted": true
+    },
+    {
+      "country": "India",
+      "year": 2030,
+      "value": 2.49,
+      "predicted": true
+    }
+  ],
+  "Japan": [
+    {
+      "country": "Japan",
+      "year": 2025,
+      "value": 8.07,
+      "predicted": true
+    },
+    {
+      "country": "Japan",
+      "year": 2026,
+      "value": 7.96,
+      "predicted": true
+    },
+    {
+      "country": "Japan",
+      "year": 2027,
+      "value": 7.84,
+      "predicted": true
+    },
+    {
+      "country": "Japan",
+      "year": 2028,
+      "value": 7.73,
+      "predicted": true
+    },
+    {
+      "country": "Japan",
+      "year": 2029,
+      "value": 7.62,
+      "predicted": true
+    },
+    {
+      "country": "Japan",
+      "year": 2030,
+      "value": 7.51,
+      "predicted": true
+    }
+  ],
+  "Kenya": [
+    {
+      "country": "Kenya",
+      "year": 2025,
+      "value": 0.4,
+      "predicted": true
+    },
+    {
+      "country": "Kenya",
+      "year": 2026,
+      "value": 0.41,
+      "predicted": true
+    },
+    {
+      "country": "Kenya",
+      "year": 2027,
+      "value": 0.42,
+      "predicted": true
+    },
+    {
+      "country": "Kenya",
+      "year": 2028,
+      "value": 0.42,
+      "predicted": true
+    },
+    {
+      "country": "Kenya",
+      "year": 2029,
+      "value": 0.43,
+      "predicted": true
+    },
+    {
+      "country": "Kenya",
+      "year": 2030,
+      "value": 0.44,
+      "predicted": true
+    }
+  ],
+  "Kuwait": [
+    {
+      "country": "Kuwait",
+      "year": 2025,
+      "value": 20.9,
+      "predicted": true
+    },
+    {
+      "country": "Kuwait",
+      "year": 2026,
+      "value": 20.36,
+      "predicted": true
+    },
+    {
+      "country": "Kuwait",
+      "year": 2027,
+      "value": 19.81,
+      "predicted": true
+    },
+    {
+      "country": "Kuwait",
+      "year": 2028,
+      "value": 19.27,
+      "predicted": true
+    },
+    {
+      "country": "Kuwait",
+      "year": 2029,
+      "value": 18.73,
+      "predicted": true
+    },
+    {
+      "country": "Kuwait",
+      "year": 2030,
+      "value": 18.19,
+      "predicted": true
+    }
+  ],
+  "Pakistan": [
+    {
+      "country": "Pakistan",
+      "year": 2025,
+      "value": 0.86,
+      "predicted": true
+    },
+    {
+      "country": "Pakistan",
+      "year": 2026,
+      "value": 0.87,
+      "predicted": true
+    },
+    {
+      "country": "Pakistan",
+      "year": 2027,
+      "value": 0.87,
+      "predicted": true
+    },
+    {
+      "country": "Pakistan",
+      "year": 2028,
+      "value": 0.88,
+      "predicted": true
+    },
+    {
+      "country": "Pakistan",
+      "year": 2029,
+      "value": 0.89,
+      "predicted": true
+    },
+    {
+      "country": "Pakistan",
+      "year": 2030,
+      "value": 0.89,
+      "predicted": true
+    }
+  ],
+  "Sweden": [
+    {
+      "country": "Sweden",
+      "year": 2025,
+      "value": 3.11,
+      "predicted": true
+    },
+    {
+      "country": "Sweden",
+      "year": 2026,
+      "value": 2.97,
+      "predicted": true
+    },
+    {
+      "country": "Sweden",
+      "year": 2027,
+      "value": 2.83,
+      "predicted": true
+    },
+    {
+      "country": "Sweden",
+      "year": 2028,
+      "value": 2.69,
+      "predicted": true
+    },
+    {
+      "country": "Sweden",
+      "year": 2029,
+      "value": 2.54,
+      "predicted": true
+    },
+    {
+      "country": "Sweden",
+      "year": 2030,
+      "value": 2.4,
+      "predicted": true
+    }
+  ],
+  "Uganda": [
+    {
+      "country": "Uganda",
+      "year": 2025,
+      "value": 0.14,
+      "predicted": true
+    },
+    {
+      "country": "Uganda",
+      "year": 2026,
+      "value": 0.15,
+      "predicted": true
+    },
+    {
+      "country": "Uganda",
+      "year": 2027,
+      "value": 0.15,
+      "predicted": true
+    },
+    {
+      "country": "Uganda",
+      "year": 2028,
+      "value": 0.15,
+      "predicted": true
+    },
+    {
+      "country": "Uganda",
+      "year": 2029,
+      "value": 0.16,
+      "predicted": true
+    },
+    {
+      "country": "Uganda",
+      "year": 2030,
+      "value": 0.16,
+      "predicted": true
+    }
+  ],
+  "United Kingdom": [
+    {
+      "country": "United Kingdom",
+      "year": 2025,
+      "value": 3.78,
+      "predicted": true
+    },
+    {
+      "country": "United Kingdom",
+      "year": 2026,
+      "value": 3.5,
+      "predicted": true
+    },
+    {
+      "country": "United Kingdom",
+      "year": 2027,
+      "value": 3.22,
+      "predicted": true
+    },
+    {
+      "country": "United Kingdom",
+      "year": 2028,
+      "value": 2.94,
+      "predicted": true
+    },
+    {
+      "country": "United Kingdom",
+      "year": 2029,
+      "value": 2.66,
+      "predicted": true
+    },
+    {
+      "country": "United Kingdom",
+      "year": 2030,
+      "value": 2.38,
+      "predicted": true
+    }
+  ],
+  "United States": [
+    {
+      "country": "United States",
+      "year": 2025,
+      "value": 13.23,
+      "predicted": true
+    },
+    {
+      "country": "United States",
+      "year": 2026,
+      "value": 12.89,
+      "predicted": true
+    },
+    {
+      "country": "United States",
+      "year": 2027,
+      "value": 12.54,
+      "predicted": true
+    },
+    {
+      "country": "United States",
+      "year": 2028,
+      "value": 12.2,
+      "predicted": true
+    },
+    {
+      "country": "United States",
+      "year": 2029,
+      "value": 11.86,
+      "predicted": true
+    },
+    {
+      "country": "United States",
+      "year": 2030,
+      "value": 11.51,
+      "predicted": true
+    }
+  ]
+}

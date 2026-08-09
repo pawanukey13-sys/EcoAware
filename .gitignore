@@ -1,0 +1,21 @@
+# Node
+node_modules/
+**/node_modules/
+
+# Env files (kabhi commit mat karo)
+.env
+**/.env
+.env.local
+
+# Build outputs
+dist/
+build/
+
+# ML - bade/binary files exclude karo
+ML/*.csv
+ML/*.pkl
+ML/.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

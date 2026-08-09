@@ -1,0 +1,415 @@
+.plastic-page {
+  background: var(--plastic-bg);
+  color: var(--plastic-text);
+  overflow: hidden;
+  position: relative;
+}
+
+.plastic-top {
+  position: absolute;
+  inset: 0;
+  height: 430px;
+
+  background: var(--plastic-hero-gradient);
+
+  filter: blur(70px);
+
+  animation: floatOcean 8s ease-in-out infinite;
+}
+
+@keyframes floatOcean {
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+.plastic-hero {
+  max-width: 1150px;
+  margin: auto;
+  padding: 95px 30px 70px;
+  position: relative;
+  z-index: 2;
+}
+
+.back-link {
+  text-decoration: none;
+  color: var(--plastic-primary);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  color: var(--plastic-accent);
+}
+
+.plastic-tag {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+  width: 270px;
+  padding: 8px 18px;
+
+  border-radius: 40px;
+
+  background: var(--plastic-surface-2);
+
+  color: var(--plastic-primary);
+
+  font-size: 0.8rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.plastic-title {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+
+  line-height: 1.1;
+
+  margin: 28px 0;
+}
+
+.plastic-title em {
+  color: var(--plastic-primary);
+
+  font-style: normal;
+}
+
+.plastic-sub {
+  max-width: 720px;
+
+  color: var(--plastic-text-light);
+
+  line-height: 1.8;
+
+  font-size: 1.08rem;
+}
+
+/* ================= SECTION ================= */
+
+.plastic-section {
+  max-width: 1150px;
+
+  margin: auto;
+
+  padding: 70px 30px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+
+  font-size: 0.8rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: var(--plastic-primary);
+}
+
+.plastic-section h2 {
+  font-size: 2.2rem;
+
+  margin: 15px 0;
+}
+
+.plastic-section p {
+  color: var(--plastic-text-light);
+
+  line-height: 1.8;
+}
+
+/* ================= CHART ================= */
+
+.plastic-chart {
+  margin-top: 40px;
+
+  padding: 25px;
+
+  background: var(--plastic-surface);
+
+  border-radius: 20px;
+
+  border: 1px solid var(--plastic-border);
+
+  box-shadow: var(--plastic-card-shadow);
+}
+
+/* ================= CARDS ================= */
+
+.plastic-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+
+  gap: 28px;
+
+  margin-top: 45px;
+}
+
+.plastic-card {
+  background: var(--plastic-surface);
+
+  border: 1px solid var(--plastic-border);
+
+  padding: 28px;
+
+  border-radius: 20px;
+
+  box-shadow: var(--plastic-card-shadow);
+
+  transition: 0.35s;
+}
+
+.plastic-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: var(--plastic-card-hover);
+}
+
+.plastic-card h3 {
+  margin-top: 0;
+
+  margin-bottom: 15px;
+
+  color: var(--plastic-primary);
+}
+
+.plastic-card p {
+  margin: 0;
+}
+
+/* ================= IMPACT ================= */
+
+.impact-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 25px;
+
+  margin-top: 45px;
+}
+
+.impact-card {
+  background: var(--plastic-surface);
+
+  border: 1px solid var(--plastic-border);
+
+  border-radius: 18px;
+
+  padding: 35px;
+
+  text-align: center;
+
+  box-shadow: var(--plastic-card-shadow);
+
+  transition: 0.3s;
+}
+
+.impact-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: var(--plastic-card-hover);
+}
+
+.impact-number {
+  font-size: 3rem;
+
+  font-weight: 800;
+
+  color: var(--plastic-primary);
+}
+
+.impact-text {
+  margin-top: 10px;
+
+  color: var(--plastic-text-light);
+
+  line-height: 1.5;
+}
+
+/* ================= TIMELINE ================= */
+
+.timeline-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 25px;
+
+  margin-top: 45px;
+}
+
+.timeline-card {
+  background: var(--plastic-surface);
+
+  border: 1px solid var(--plastic-border);
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  text-align: center;
+
+  box-shadow: var(--plastic-card-shadow);
+
+  transition: 0.35s;
+}
+
+.timeline-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: var(--plastic-card-hover);
+}
+
+.timeline-card h3 {
+  margin-top: 0;
+
+  color: var(--plastic-primary);
+}
+
+.timeline-years {
+  font-size: 2rem;
+
+  font-weight: 800;
+
+  margin-top: 18px;
+
+  color: var(--plastic-accent);
+}
+
+/* ================= SOLUTIONS ================= */
+
+.solution-list {
+  display: grid;
+
+  gap: 18px;
+
+  padding-left: 22px;
+
+  margin-top: 35px;
+}
+
+.solution-list li {
+  line-height: 1.8;
+
+  color: var(--plastic-text-light);
+}
+
+.solution-list li::marker {
+  color: var(--plastic-primary);
+}
+
+/* ================= CTA ================= */
+
+.plastic-cta {
+  margin: 80px auto;
+
+  max-width: 1150px;
+
+  padding: 70px 30px;
+
+  text-align: center;
+
+  border-radius: 25px;
+
+  background: linear-gradient(
+    135deg,
+    var(--plastic-primary),
+    var(--plastic-primary-light)
+  );
+
+  color: white;
+}
+
+.plastic-cta h2 {
+  font-size: 2.5rem;
+
+  margin-bottom: 15px;
+}
+
+.plastic-cta p {
+  margin: 20px 0 35px;
+
+  opacity: 0.95;
+}
+
+.plastic-btn {
+  display: inline-block;
+
+  padding: 15px 35px;
+
+  border-radius: 50px;
+
+  background: white;
+
+  color: var(--plastic-primary);
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.plastic-btn:hover {
+  transform: translateY(-4px);
+}
+
+/* ================= FOOTER ================= */
+
+.plastic-footer {
+  padding: 40px;
+
+  text-align: center;
+
+  color: var(--plastic-text-light);
+
+  border-top: 1px solid var(--plastic-border);
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--plastic-primary);
+
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--plastic-bg);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .plastic-title {
+    font-size: 2.5rem;
+  }
+
+  .plastic-section {
+    padding: 60px 20px;
+  }
+
+  .plastic-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .plastic-chart {
+    padding: 15px;
+  }
+
+  .plastic-cta {
+    padding: 50px 20px;
+  }
+
+  .plastic-cta h2 {
+    font-size: 2rem;
+  }
+}
