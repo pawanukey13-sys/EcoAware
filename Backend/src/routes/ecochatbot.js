@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const { buildExplainGraphPrompt,buildFollowUpPrompt } = require('../services/promptBuilder');
-const { callGemini } = require('../services/llmService');
+const {callGemini} = require("../services/llmservice")
 
 router.post('/explain-graph', async (req, res) => {
   try {
