@@ -55,7 +55,13 @@ Frontend: Vercel
 Backend: Render
 
 
-Engineering Highlights
-Grounded AI, not just an API call: EcoBot's responses are constructed by injecting the exact filtered dataset currently shown on screen into the LLM prompt, so answers stay traceable to real numbers rather than the model's general training data — with explicit prompt instructions preventing the model from blending unverified claims into data-backed statements.
-Model selection based on diagnosed failure, not first attempt: Random Forest was initially used for forecasting; after observing it simply repeated the last historical value for all future years, the root cause (tree-based models can't extrapolate past their training range) was identified and the approach was corrected to per-country Linear Regression.
-Environment-based configuration: All API URLs are read from environment variables (VITE_API_URL on the frontend, secrets via Render's environment panel on the backend) rather than hardcoded, enabling clean separation between local development and production deployments.
+Engineering Highlights:-
+1.Grounded AI, not just an API call: EcoBot's responses are constructed by injecting the exact filtered dataset currently shown on screen into the LLM prompt, so answers stay traceable to real numbers rather than the model's general training data — with explicit prompt instructions preventing the model from blending unverified claims into data-backed statements.
+
+2.Model selection based on diagnosed failure, not first attempt: Random Forest was initially used for forecasting; after observing it simply repeated the last historical value for all future years, the root cause (tree-based models can't extrapolate past their training range) was identified and the approach was corrected to per-country Linear Regression.
+
+3.Environment-based configuration: All API URLs are read from environment variables (VITE_API_URL on the frontend, secrets via Render's environment panel on the backend) rather than hardcoded, enabling clean separation between local development and production deployments.
+Future Improvements:-
+1.Expand quiz question bank beyond the current fixed set with randomized sampling
+2.Multi-feature regression (population, GDP, energy mix) for more causally-grounded forecasts
+3.Additional EcoBot modes: trend-segment analysis, anomaly detection
