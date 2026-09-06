@@ -1,11 +1,11 @@
 🌍 EcoAware — Environmental Analytics Platform
 
-Live Demo: https://eco-aware-xxxx.vercel.app (update with your actual Vercel URL) Backend API: Deployed on Render
+Live Demo:https://eco-aware-psi.vercel.app/ Backend API: Deployed on Render
 
 EcoAware is a full-stack environmental awareness and analytics platform that combines interactive data visualization, an LLM-grounded AI assistant, and machine learning-based forecasting to help users explore and understand global environmental trends — climate change, air quality, water withdrawal, and deforestation.
 
-✨ Features
-📊 Interactive Analytics Dashboard
+ Features
+ Interactive Analytics Dashboard
 Filterable, searchable dashboard covering four environmental categories: Climate (CO₂ emissions), Air Quality (PM2.5), Water Withdrawal, and Forest Change
 Bar, Line, and Pie chart views (Recharts) with automatic chart-type switching based on context (e.g. single-country selection auto-switches to trend view)
 Country and year-based filtering across all datasets
