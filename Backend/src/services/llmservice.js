@@ -1,6 +1,6 @@
 // backend/services/llmService.js
 
-const MODELS = ["gemini-flash-latest", "gemini-2.5-flash", "gemini-2.5-flash-lite"];
+const MODELS = ["gemini-3.8-flash", "gemini-3.5-flash-lite", "gemini-flash-latest"];
 
 async function callGemini(prompt) {
   const apiKey = process.env.GEMINI_API_KEY;
@@ -9,20 +9,30 @@ async function callGemini(prompt) {
 
   for (const model of MODELS) {
     for (let attempt = 0; attempt < 2; attempt++) {
-      const res = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
-        { method: "POST", headers: { "Content-Type": "application/json" }, body }
-      );
+      try {
+        const res = await fetch(
+          `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body,
+            signal: AbortSignal.timeout(20000), // 20 sec timeout
+          }
+        );
 
-      if (res.ok) {
-        const data = await res.json();
-        return data.candidates?.[0]?.content?.parts?.[0]?.text ?? "No response generated.";
+        if (res.ok) {
+          const data = await res.json();
+          return data.candidates?.[0]?.content?.parts?.[0]?.text ?? "No response generated.";
+        }
+
+        lastErr = await res.text();
+        console.error(`Gemini ${model} failed (${res.status})`, lastErr);
+        if (![429, 500, 503].includes(res.status)) break; // 404/400: next model
+        await new Promise((r) => setTimeout(r, 1500));
+      } catch (e) {
+        lastErr = String(e.message);
+        console.error(`Gemini ${model} error:`, lastErr);
       }
-
-      lastErr = await res.text();
-      console.error(`Gemini ${model} failed (${res.status})`, lastErr);
-      if (![429, 500, 503].includes(res.status)) break; // not a temporary error, try next model
-      await new Promise((r) => setTimeout(r, 800));
     }
   }
   throw new Error(`Gemini API error: ${lastErr}`);
