@@ -7,7 +7,8 @@ import "./Home.css"; // apna style.css copy karke Home.css naam de do
 import image1 from "../../assets/image1.png";
 import image3 from "../../assets/image3.png";
 const API_URL = `${import.meta.env.VITE_API_URL}/api/pledge`;
-
+console.log("Backend URL:", API_URL);
+console.log("User Token:", !!localStorage.getItem("token"));
 export default function Home() {
   const [pledgeCount, setPledgeCount] = useState(0);
   const [userName, setUserName] = useState("");

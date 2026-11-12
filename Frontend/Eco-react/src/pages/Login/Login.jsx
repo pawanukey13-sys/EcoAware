@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Login.css"
-import { useNavigate,Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -69,8 +69,8 @@ const LoginForm = () => {
         </form>
 
         <div className="auth-footer">
-          Already have an account?
-          <a href="/login"> Login</a>
+          Don't have an account?
+          <Link to="/register"> Register</Link>
         </div>
       </div>
     </div>

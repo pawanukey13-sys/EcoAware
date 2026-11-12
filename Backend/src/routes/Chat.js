@@ -53,9 +53,7 @@ Rules:
           generationConfig: {
             maxOutputTokens: 500,
             temperature: 0.7,
-            thinkingConfig: {
-              thinkingLevel: "minimal",
-            },
+            
           },
         }),
       },
@@ -64,9 +62,9 @@ Rules:
 console.log(JSON.stringify(geminiHistory, null, 2));
     if (!response.ok) {
       const errData = await response.json();
-      console.error("Gemine API error ", errData);
+      console.error("Gemine API error ", JSON.stringify(errData));
       return res.status(500).json({
-        error: "API Error occured",
+        error: errData.error?.message ||"API Error occured",
       });
     }
     const data = await response.json();
